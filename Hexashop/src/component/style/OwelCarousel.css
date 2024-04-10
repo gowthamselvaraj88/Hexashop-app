@@ -1,0 +1,15 @@
+.react-multiple-carousel__arrow react-multiple-carousel__arrow--right {
+    top: 100px;
+}
+
+.react-multiple-carousel__arrow{
+    /* left: calc(4% + 1px);
+    right: calc(4% + 1px); */
+    top:160px;
+    position: absolute;
+  }
+
+  .react-multi-carousel-list  {
+    position: relative !important;
+
+  }
