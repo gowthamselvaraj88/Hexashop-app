@@ -39,7 +39,7 @@ const Socialmedia = () => {
 const mediaImg = Socialmediaimg.map((item) =>(<SocialmediaImage iamgeLink={item.imgUrl} category={item.category} /> ));
 
   return (
-    <div className="mx-auto px-4 sm:px-2 lg:px-8 max-w-7xl ">
+    // <div className="mx-auto px-4 sm:px-2 lg:px-8 max-w-7xl ">
     <section>
       <div className="container mx-auto">
         <div className="row">
@@ -54,11 +54,11 @@ const mediaImg = Socialmediaimg.map((item) =>(<SocialmediaImage iamgeLink={item.
           </div>
         </div>
       </div>
-      <div className=" md:flex flex-row  md:p-10">
+      <div className="  block  md:p-10">                         {/* //md:flex flex-row */}
          {mediaImg}
         </div>
       </section>
-    </div>
+    // </div>
   );
 };
 

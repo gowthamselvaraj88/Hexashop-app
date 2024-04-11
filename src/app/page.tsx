@@ -9,26 +9,30 @@ import Scrollwomen from "@/component/Scrollwomen";
 import Scrollkid from "@/component/Scrollkid";
 import Imagegallery from "@/component/Imagegallery";
 import OwelCarousel from "@/component/OwelCarousel"
+import Grid from "@/component/grid";
+
 
 
 export default function MediaCard() {
   return (
     <div className="w-full h-full ">
       <section>
-        <Header />
+        {/* <Header /> */}
         
       </section> 
       
       <section>
         <Imagegallery />
+       
       </section>
+       {/* <Grid /> */}
       {/* <OwelCarousel /> */}
       <section
         className="p-10 10 10 10 flex flex-col bg-white m-auto p-auto
          section1 border-y border-dotted-amber-80"
         id="mens"
       >
-        <Scroll />
+        {/* <Scroll /> */}
       </section>
 
        <section
@@ -36,34 +40,34 @@ export default function MediaCard() {
          section1 border-y border-dotted-amber-80"
         id="womens"
       >
-        <Scrollwomen />
+        {/* <Scrollwomen /> */}
       </section>
       <section
         className="p-10 10 10 10 flex flex-col bg-white m-auto p-auto
          section1 border-y border-dotted-amber-80"
         id="kids"
       >
-        <Scrollkid />
+        {/* <Scrollkid /> */}
       </section>
 
      <section
         className="p-10 10 10 10 flex flex-col bg-white m-auto p-auto"
         id="kids border-y border-dotted-amber-80"
       >
-        <Socialmedia />
+        {/* <Socialmedia /> */}
       </section>
       <section
         className="p-10 10 10 10 flex flex-col bg-white m-auto p-auto"
         id="Explore border-y border-dotted-amber-80"
       >
-        <Exploreproduct />
+        {/* <Exploreproduct /> */}
       </section>
       <section className="p-10 10 10 10 flex flex-col bg-white m-auto p-auto
        border-y border-dotted-amber-80"> 
-        <Address />
+        {/* <Address /> */}
       </section>
         <section>
-        <Footer />
+        {/* <Footer /> */}
       </section>
     </div>
   );

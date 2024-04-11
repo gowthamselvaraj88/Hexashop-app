@@ -144,7 +144,7 @@ export default function Scroll() {
             </div>
           </div>
         </div>
-        <div className="scroll-items flex flex-row-1 sm:p-10">
+        <div className="scroll-items flex-row sm:p-10">
           <div className="border-solid border border-indigo-100 justify-content: sm:flex-start w-50 h-10 my-32">
             <button id="1" onClick={() => handleClick("left")}>
               <img
