@@ -22,7 +22,7 @@ export default function MediaCard() {
       </section> 
       
       <section>
-        <Imagegallery />
+        {/* <Imagegallery /> */}
        
       </section>
        {/* <Grid /> */}
@@ -40,7 +40,7 @@ export default function MediaCard() {
          section1 border-y border-dotted-amber-80"
         id="womens"
       >
-        {/* <Scrollwomen /> */}
+        <Scrollwomen />
       </section>
       <section
         className="p-10 10 10 10 flex flex-col bg-white m-auto p-auto
@@ -67,7 +67,7 @@ export default function MediaCard() {
         {/* <Address /> */}
       </section>
         <section>
-        {/* <Footer /> */}
+        <Footer />
       </section>
     </div>
   );

@@ -8,7 +8,7 @@ const Imagegallery = () => {
   return (
     <div>
       <section className="p-5 bg-white box-border-solid border-y border-dotted-amber-80">
-        <div className="grid lg:grid-cols-4 md:grid-cols-3 md:grid-cols-1 gap-3">
+        <div className="grid lg:grid-cols-4 md:grid-cols-1 gap-3">
           <div className="lg:col-span-2 lg:row-span-2 ">
             <div className="relative pb-5 lg:pb-0">
               <img

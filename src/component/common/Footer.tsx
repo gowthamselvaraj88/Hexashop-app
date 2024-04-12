@@ -4,9 +4,9 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-black dark:bg-gray-900">
-      <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl md:justify-between items-center">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 py-8 lg:py-12">
-          <div className="text-gray-500 dark:text-gray-400">
+      <div className=" ">
+        <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl grid grid-cols-1 md:grid-cols-4 gap-8  py-8 lg:py-12">
+          <div className="justify-between placeholder:">
             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
               <img
                 src="./images/white-logo.png"
@@ -26,7 +26,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="flex">
             <h2 className="mb-6 text-white text-sm font-semibold uppercase dark:text-white">
               Company
             </h2>
@@ -53,7 +53,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="flex">
             <h2 className="mb-6 text-white text-sm font-semibold uppercase dark:text-white">
               Help center
             </h2>
@@ -80,8 +80,8 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
-            <h2 className="mb-6 text-white text-sm font-semibold uppercase dark:text-white">
+          <div className="flex">
+            <h2 className="flex mb-6 text-white text-sm font-semibold uppercase dark:text-white">
               Legal
             </h2>
             <ul className="text-white font-medium">
@@ -103,7 +103,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="py-6 flex flex-col-reverse justify-between items-center md:flex-row md:items-center md:justify-between">
+        <div className="py-6 flex flex-col-reverse justify-between items-center md:flex-row md:items-center">
           <span className="text-sm text-white dark:text-gray-300">
             © 2023{" "}
             <Link href="https://flowbite.com/" className="text-white">

@@ -1,150 +1,108 @@
-'use client'
-import React, { useState } from 'react'
-import "react-multi-carousel/lib/styles.css";
-import "./style/OwelCarousel.css";
+"use client"
+import React, { useState } from "react";
+// import ocean from "../../../public/images/Screenshot 2024-01-13 111232.png";
+// import sea from "../../../public/images/Screenshot 2024-01-13 111257.png";
+// import woman from "../../../public/images/Screenshot 2024-01-13 111341.png";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
+import dynamic from "next/dynamic";
 
-export default function Scrollkid() {
-  const [startIndex, setStartIndex] = useState(0);
-  const [endIndex, setEndIndex] = useState(3);
-  
-  const women = [
-    {
-        id:1,
-        image:<img
-      className="rounded-sm p-3"
-      src="./images/women-01.jpg"
-      width={300}
-      height={300}
-      alt=""
-    />,
-        name:"New Green Jacket",
-        price:"$75.00"
-    },
-    {   id:2,
-      image:<img
-      className="rounded-sm p-3"
-      src="./images/women-02.jpg"
-      width={300}
-      height={300}
-      alt=""
-    />,
-        name:"Classic Dress",
-        price:"$45.00"
-    },
-    {   id:3,
-      image:<img
-      className="rounded-sm p-3"
-      src="./images/women-03.jpg"
-      width={300}
-      height={300}
-      alt=""
-    />,
-        name:"Spring Collection",
-        price:"$130.00"
-},
-{
-  id:7,
-  image:<img
-      className="rounded-sm p-3"
-      src="./images/women-01.jpg"
-      width={300}
-      height={300}
-      alt=""
-    />,
-  name:"New Green Jacket",
-  price:"$75.00"
-},
-{   id:8,
-  image:<img
-  className="rounded-sm p-3"
-  src="./images/women-02.jpg"
-  width={300}
-  height={300}
-  alt=""
-/>,
-  name:"Classic Dress",
-  price:"$45.00"
-},
-{   id:9,
-  image:<img
-      className="rounded-sm p-3"
-      src="./images/women-03.jpg"
-      width={300}
-      height={300}
-      alt=""
-    />,
-  name:"Spring Collection",
-  price:"$130.00"
+if (typeof window !== "undefined" && !window.$) {
+  window.$ = window.jQuery = require("jquery");
 }
-]
 
-const handleClick = (type: "left" | "right") => {
-  if (type === "left") {
-    const newStartIndex = startIndex - 3 < 0 ? 0 : startIndex - 1;
-    const newEndIndex = newStartIndex + 3;
-    setStartIndex(newStartIndex);
-    setEndIndex(newEndIndex);
-  } else {
-    const newEndIndex = endIndex + 3 > women.length ? women.length : endIndex + 1;
-    const newStartIndex = newEndIndex - 3;
-    setStartIndex(newStartIndex);
-    setEndIndex(newEndIndex);
-  }
+const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
+  ssr: false,
+});
+
+const carouselItems = [
+  {
+    imageSrc:"./images/men-01.jpg",
+    altText: "Ocean",
+    caption: "55th ACM Awards to Broadcost live from Live Nashvile",
+    caption1:
+      "The Academy Country music@ Annunced that 55th ACADEMY of COUNTRY MUSIC AWARDS, will take a place of nashvile Country Music@ will take a place of nashvile",
+  },
+  {
+    imageSrc: "./images/men-02.jpg",
+    altText: "Sea",
+    caption: "Exlusive Europian Road show:The chiron pur sport currently",
+    caption1:
+      "The Academy Country music@ Annunced that 55th ACADEMY of COUNTRY MUSIC AWARDS, will take a place of nashvile MUSIC AWARDS, will take a place of nashvile",
+  },
+  {
+    imageSrc: "./images/men-03.jpg",
+    altText: "Woman",
+    caption: "Lamborghini unveil new motor yatch Technomar  for Lamborghini",
+    caption1:
+      "TN for the first tim,Academy of the Country music @ annunced that the 55TH, of the Country Music@ will take a place of nashvile f nashvile MUSIC AWARDS, will take a place of nashvile",
+  },
+];
+
+const options = {
+  loop: true,
+  margin: 10,
+  items: 1,
+  autoplay: true,
+  nav: false,
+  smartSpeed: 3, // Very fast transition
+  // onTranslate: onTranslate,
+  // onTranslated: onTranslated
 };
 
+export default function Slider() {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const nextSlide = () => {
+    setActiveIndex((prevIndex: any) =>
+      prevIndex === carouselItems.length - 1 ? 0 : prevIndex + 1
+    );
+  };
   return (
-    <div className="row p-5">
-    <div className="col-lg-12">
-      <div className="section-heading md:mx-20">
-        <h2 className="text-5xl font-bold px-3 py-5">Women'S Latest</h2>
-        <span className="text-sm p-10">
-          Details to details is what makes Hexashop different from
-          the other themes.
-        </span>
+    <div className="shadow bg-gray-200 relative rounded  border border-1 border-gray-300">
+      <div className="absolute mt-[8px] left-0 trending">
+        <a
+          href="#"
+          className="rounded-br-lg border border-1 text-lg border-gray-300 rounded-tl right-0 text-white bg-blue-600 hover:bg-blue-500 focus:ring-4 focus:ring-blue-300 font-medium px-5 py-2.5 dark:bg-blue-300 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 mt-35"
+        >
+          Trending News{" "}
+        </a>
+
+        <div className="mt-[45px]">
+          <button onClick={nextSlide}>
+          <svg xmlns="http://www.w3.org/2000/svg" className="top-0 ms-5 owl-nav owl-next" height="16" width="25" viewBox="0 0 512 512"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg>
+          </button>
+        </div>
       </div>
-    </div>
-  <div className='md:mx-20 w-3/4 justify-center items-center md:p-10 sm:px-3'>
-  <div className="scroll-items flex flex-row-1 sm:p-10">
-          <div className="border-solid border border-indigo-100 justify-content: sm:flex-start w-50 h-10 my-32">
-            <button id="1" onClick={() => handleClick("left")}>
-              <img
-                className="rounded-md mt-100 p-2"
-                src="./images/prev.png"
-                width={50}
-                height={50}
-                alt="left"
-              />
-            </button>
-          </div>
-          
-          <div className="overflow-x-auto w-500 h-500 scroll-pr-0.5 flex flex-row">
-        {women.map((item) => (
-          (item.id >= startIndex && item.id < endIndex) && (
-            <div key={item.id} className="scroll-item">
-              <div className="img">{item.image}</div>
-              <div className="name"><p>{item.name}</p></div>
-
-              <div className="price">{item.price}</div>
+      <OwlCarousel className="owl-theme pt-10 ps-12" {...options}>
+        {carouselItems.map((item, index) => (
+          <div className="item" key={index}>
+            <div className="pe-5 media-flex" >
+              <div className="ms-5 pe-5 font-bold">
+                <div className="font-bold owl-head ">
+                  <p>{item.caption}</p>
+                </div>
+                <div className="font-light sm:text-sm owl-text mt-1">
+                  <p>{item.caption1}</p>
+                </div>
+              </div>
+              <div>
+                <img
+                  src={item.imageSrc}
+                  className="rounded mt-2"
+                  alt={item.altText}
+                  style={{ height: "150px", width: "650px" }}
+                />
+                <div className="float-end me- text-blue-500 flex">
+                  <p className="mt-1.5 cursor-pointer pe-1">View More</p>
+                  <div className=" mt-3 ms-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" viewBox="0 0 512 512"><path fill="#42A5F5" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                  </div>
+                </div>
+              </div>
             </div>
-          )
+          </div>
         ))}
-      </div>         
-          <div className="border-solid border border-indigo-100 flex-end w-50 h-10 my-32">
-            <button id="2" onClick={() => handleClick("right")}>
-              <img
-                className="rounded-md mt-100 p-2"
-                src="./images/next.png"
-                width={50}
-                height={50}
-                alt="left"
-              />
-            </button>
-          </div>
-          </div>
-  </div>
-  </div>
-
-
+      </OwlCarousel>
+    </div>
   );
 }
-

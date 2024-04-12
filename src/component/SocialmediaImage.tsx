@@ -4,16 +4,14 @@ import React from "react";
 const SocialmediaImage = (props: any) => {
   return (
     <div className="image">
-      <Link className="relative block w-500 h-700 bg-gray-900 group" href="##">
+      <Link className="relative block bg-gray-900 group" href="##">
         <img
-          className="absolute inset-0 object-cover 
-								w-full h-full group-hover:opacity-50"
+          className="absolute inset-0 object-cover w-full h-full group-hover:opacity-50"
           src={props.iamgeLink}
         />
         <div className="relative p-5">
           <div className="mt-8 ml-24">
-            <div
-              className="transition-all transform 
+            <div className="transition-all transform 
 								translate-y-8 opacity-0 
 								group-hover:opacity-100 
 								group-hover:translate-y-0"

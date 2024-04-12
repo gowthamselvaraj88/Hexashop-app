@@ -41,20 +41,20 @@ const mediaImg = Socialmediaimg.map((item) =>(<SocialmediaImage iamgeLink={item.
   return (
     // <div className="mx-auto px-4 sm:px-2 lg:px-8 max-w-7xl ">
     <section>
-      <div className="container mx-auto">
-        <div className="row">
-          <div className="col-lg-12 p-3">
-            <div className="section-heading">
-              <h2 className="text-5xl font-bold">Social Media</h2>
-              <span className="text-sm">
+      <div className="mx-auto">
+        <div className="grid grid-row">
+          
+            <div className="p-5">
+              <h2 className="text-5xl m-6 p-5 font-bold">Social Media</h2>
+              <span className="text-md ">
                 Details to details is what makes Hexashop different from the
                 other themes.
               </span>
             </div>
-          </div>
+         
         </div>
       </div>
-      <div className="  block  md:p-10">                         {/* //md:flex flex-row */}
+      <div className="md:flex p-10 md:p-5">                         {/* //md:flex flex-row */}
          {mediaImg}
         </div>
       </section>

@@ -5,7 +5,7 @@ import { FaQuoteLeft } from "react-icons/fa";
 export default function Exploreproduct () {
   return (
     <section>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="p-10 mb-2">
           <div className="button">
             <Link
@@ -104,29 +104,29 @@ export default function Exploreproduct () {
               />
             </div>
             {/* accessories  */}
-
-            <div className="relative">
-              <div className="mt-10">
-                <div className="relative flex-col-1">
+            <div className="flex items-center mt-1 p-5">
+              <Link className="relative block w-500 h-200 group" href="#">
+                <div className="relative flex-row-1">
                   <img
-                    className="bg-indigo-500 opacity-5 w-full h-full object-cover rounded-md"
+                    className=" bg-indigo-500 opacity-5 w-full h-full object-cover rounded-md"
                     src="./images/left-banner-image.jpg"
-                    width={40}
-                    height={40}
+                    width={200}
+                    height={200}
                     alt="kid"
                   />
-                  {/* <div className="absolute inset-0 items-center grid grid-row-2 justify-center font-bold ">
-                    <h2 className="text-5xl text-black font-bold">
-                      Different Types
-                    </h2>
-                    {/* <div className="rounded-lg">
-                      <p className=" text-black">
+                  <div
+                    className="absolute inset-0 items-center grid grid-row-2
+                                      justify-center text-black font-bold break-words "
+                  >
+                    <h2 className="text-5xl ">Different Types</h2>
+                    <div className="rounded-lg">
+                      <p className=" break-all">
                         <span>Over 304 Products</span>
                       </p>
-                    </div> 
-                  </div> */}
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
