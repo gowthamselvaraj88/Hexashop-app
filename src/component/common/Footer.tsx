@@ -26,7 +26,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="flex">
+          <div className="">
             <h2 className="mb-6 text-white text-sm font-semibold uppercase dark:text-white">
               Company
             </h2>
@@ -53,7 +53,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="flex">
+          <div className="">
             <h2 className="mb-6 text-white text-sm font-semibold uppercase dark:text-white">
               Help center
             </h2>
@@ -80,7 +80,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="flex">
+          <div className="">
             <h2 className="flex mb-6 text-white text-sm font-semibold uppercase dark:text-white">
               Legal
             </h2>

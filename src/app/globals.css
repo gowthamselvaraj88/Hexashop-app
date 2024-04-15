@@ -41,3 +41,71 @@ body {
 }.react-multiple-carousel__arrow--left:disabled{
   display: block !important;
 }
+
+
+.owl-nav.disabled{
+  display: block !important;
+  font-size: 35px;
+}
+
+.owl-carosuel{
+  position: relative;
+  
+}
+.owl-prev{
+  position: absolute;
+  left: -8%;
+  top: 35%;
+  border: 2px solid rgb(175, 174, 174) !important;
+  width: 55px; 
+}
+.owl-next{
+  position: absolute;
+  right: -8%;
+  top: 35%;
+  border: 2px solid rgb(175, 174, 174) !important ;
+  width: 55px;
+}
+
+@media screen and (max-width:767px) {
+  .owl-prev{
+    position: absolute;
+    left: -18%;
+    top: 33%;
+    width: 30px; 
+  }
+  .owl-next{
+    position: absolute;
+    right: -18%;
+    top: 33%;
+    width: 30px;
+  }
+}
+@media screen and (min-width:540px) and (max-width:1024px) {
+  .owl-prev{
+    position: absolute;
+    left: -10%;
+    top: 33%;
+    width: 30px; 
+  }
+  .owl-next{
+    position: absolute;
+    right: -10%;
+    top: 33%;
+    width: 30px;
+  }
+}
+@media screen and (max-width:290px) {
+  .owl-prev{
+    position: absolute;
+    left: -30%;
+    top: 23%;
+    width: 30px; 
+  }
+  .owl-next{
+    position: absolute;
+    right: -30%;
+    top: 23%;
+    width: 30px;
+  }
+}

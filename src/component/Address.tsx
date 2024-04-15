@@ -12,7 +12,7 @@ const Address = () => {
             </h1>
 
             <div className="p-3">
-              <p className="md:text-sm text-xl">
+              <p className="md:text-sm text-xl text-[#d4d4d4]">
                 Details to details is what makes Hexashop different from the
                 other themes.
               </p>
@@ -54,7 +54,7 @@ const Address = () => {
               <h4 className="text-xl leading-tight font-medium text-black hover:underline">
                 Store Location:
               </h4>
-              <p className="text-sm">
+              <p className="text-sm text-[#d4d4d4]">
                 Sunny Isles Beach, FL 33160, United States
               </p>
             </div>
@@ -64,7 +64,7 @@ const Address = () => {
               <h4 className="text-xl leading-tight font-medium text-black hover:underline">
                 Phone:
               </h4>
-              <p className="text-sm">010-020-0340</p>
+              <p className="text-sm text-[#d4d4d4]">010-020-0340</p>
             </div>
          
           
@@ -72,7 +72,7 @@ const Address = () => {
               <h4 className="text-xl leading-tight font-medium text-black hover:underline">
                 Office Location:
               </h4>
-              <p className="text-sm">North Miami Beach</p>
+              <p className="text-sm text-[#d4d4d4]">North Miami Beach</p>
             </div>
           
         </div>
@@ -81,19 +81,19 @@ const Address = () => {
             <h4 className="text-xl leading-tight font-medium text-black hover:underline ">
               Work Hours:
             </h4>
-            <p className="text-sm">07:30 AM - 9:30 PM Daily</p>
+            <p className="text-sm text-[#d4d4d4]">07:30 AM - 9:30 PM Daily</p>
           </div>
           <div className="p-2">
             <h4 className="text-xl leading-tight font-medium text-black hover:underline ">
               EMAIL:
             </h4>
-            <p className="text-sm">info@company.com</p>
+            <p className="text-sm text-[#d4d4d4]">info@company.com</p>
           </div>
           <div className="p-2">
             <h4 className="text-xl leading-tight font-medium text-black hover:underline">
               Social Media:
             </h4>
-            <p className="text-sm">Facebook, Instagram, Behance, Linkedin</p>
+            <p className="text-sm text-[#d4d4d4]">Facebook, Instagram, Behance, Linkedin</p>
           </div>
         </div>
       </div>

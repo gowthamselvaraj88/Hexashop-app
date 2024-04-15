@@ -14,7 +14,7 @@ export default function Exploreproduct () {
             >
               Explore Our Products
               </Link>
-            <p className="mt-8 text-slate-500">
+            <p className="mt-8 text-[#d4d4d4]">
               You are allowed to use this HexaShop HTML CSS template. You can
               feel free to modify or edit this layout. You can convert this
               template as any kind of ecommerce CMS theme as you wish.
@@ -28,17 +28,17 @@ export default function Exploreproduct () {
                 </span>
               </p>
 
-            <p className="mt-8 text-slate-500">
+            <p className="mt-8 text-[#d4d4d4]">
               There are 5 pages included in this HexaShop Template and we are
               providing it to you for absolutely free of charge at our
               TemplateMo website. There are web development costs for us.
             </p>
-            <p className="mt-8 text-slate-500">
+            <p className="mt-8 text-[#d4d4d4]">
               If this template is beneficial for your website or business,
               please kindly{" "}
-              {/* <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+              <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
                 support us
-              </div>{" "} */}
+              </div>{" "}
               a little via PayPal. Please also tell your friends about our great
               website. Thank you.
             </p>
