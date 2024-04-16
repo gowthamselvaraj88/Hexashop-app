@@ -1,38 +1,33 @@
 import * as React from "react";
-// import Scroll from "@/component/Scroll";
-import Socialmedia from "@/component/Socialmedia";
+import Scroll from "@/component/owl-carousel/Scroll";
+import Socialmedia from "@/component/Social-media/Socialmedia";
 import Address from "@/component/Address";
 import Exploreproduct from "@/component/Exploreproduct";
 import Header from "@/component/common/Header";
 import Footer from "@/component/common/Footer";
-import Scrollwomen from "@/component/Scrollwomen";
-// import Scrollkid from "@/component/Scrollkid";
-import Imagegallery from "@/component/Imagegallery";
-
-
-
+import Scrollwomen from "@/component/owl-carousel/Scrollwomen";
+import Scrollkid from "@/component/owl-carousel/Scrollkid";
+import Imagegallery from "@/component/gallery/Imagegallery";
 
 export default function MediaCard() {
   return (
-    <div className="w-full h-full ">
+    <section className="w-full h-full ">
       <section>
-        {/* <Header /> */}
-        
-      </section> 
-      
+        <Header />
+      </section>
+
       <section>
-        {/* <Imagegallery /> */}
-       
+        <Imagegallery />
       </section>
       <section
         className="p-10 10 10 10 flex flex-col bg-white m-auto p-auto
          section1 border-y border-dotted-amber-80"
         id="mens"
       >
-        {/* <Scroll /> */}
+        <Scroll />
       </section>
 
-       <section
+      <section
         className="p-10 10 10 10 flex flex-col bg-white m-auto p-auto
          section1 border-y border-dotted-amber-80"
         id="womens"
@@ -44,12 +39,12 @@ export default function MediaCard() {
          section1 border-y border-dotted-amber-80"
         id="kids"
       >
-        {/* <Scrollkid /> */}
+        <Scrollkid />
       </section>
 
-     <section
-        className="p-10 10 10 10 flex flex-col bg-white m-auto p-auto"
-        id="kids border-y border-dotted-amber-80"
+      <section
+       className="p-10 10 10 10 flex flex-col bg-white m-auto p-auto
+       section1 border-y border-dotted-amber-80"
       >
         <Socialmedia />
       </section>
@@ -59,13 +54,15 @@ export default function MediaCard() {
       >
         <Exploreproduct />
       </section>
-      <section className="p-10 10 10 10 flex flex-col bg-white m-auto p-auto
-       border-y border-dotted-amber-80"> 
+      <section
+        className="p-10 10 10 10 flex flex-col bg-white m-auto p-auto
+       border-y border-dotted-amber-80"
+      >
         <Address />
       </section>
-        <section>
+      <section>
         <Footer />
       </section>
-    </div>
+    </section>
   );
 }

@@ -3,11 +3,12 @@ import React from "react";
 
 const SocialmediaImage = (props: any) => {
   return (
-    <div className="image">
+    <div className="">
       <Link className="relative block bg-gray-900 group" href="##">
         <img
           className="absolute inset-0 object-cover w-full h-full group-hover:opacity-50"
           src={props.iamgeLink}
+          
         />
         <div className="relative p-5">
           <div className="mt-8 ml-24">
