@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+    
+    
+}
+.react-multi-carousel-item{
+  width: 300px;
+} 
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+/* .react-multiple-carousel__arrow--right:disabled{
+    display: block !important;
+}.react-multiple-carousel__arrow--left:disabled{
+  display: block !important;
+} */
+
+
+.owl-nav.disabled{
+  display: block !important;
+  font-size: 35px;
+}
+
+.owl-carosuel{
+  position: relative;  
+}
+
+.owl-prev{
+  position: absolute;
+  left: -10%;
+  top: 30%;
+  border: 1px solid rgb(216, 210, 210) !important;
+  width: 45px; 
+}
+.owl-next{
+  position: absolute;
+  right: -10%;
+  top: 30%;
+  border: 1px solid rgb(175, 174, 174) !important ;
+  width: 45px;
+}
+
+@media screen and (max-width:425px) {
+  .owl-prev{
+    position: absolute;
+    left: -30%;
+    top: 23%;
+    width: 20px; 
+    display: none !important;
+  }
+  .owl-next{
+    position: absolute;
+    right: -30%;
+    top: 23%;
+    width: 20px;
+    display: none !important;
+  }
+  .owl-carousel{
+    width: 75%;
+  }
+  .owl-item img{
+    width: 75%;
+  }
+}
+
+@media screen and (min-width:425px) and (max-width:767px) {
+  .owl-prev{
+    position: absolute;
+    left: -10%;
+    top: 33%;
+    width: 30px; 
+  }
+  .owl-next{
+    position: absolute;
+    right: -10%;
+    top: 33%;
+    width: 30px;
+  }
+  .owl-carousel{
+    width: 85%;
+  }
+  .owl-item img{
+    width: 85%;
+  }
+  .react-multiple-carousel__arrow--right:disabled{
+    display: block !important;
+}.react-multiple-carousel__arrow--left:disabled{
+  display: block !important;
+}
+
+}
+.owl-carousel{
+  padding-bottom: 25px;
+}
+@media screen and (min-width:540px) and (max-width:1024px) {
+  .owl-prev{
+    position: absolute;
+    left: -10%;
+    top: 33%;
+    width: 30px; 
+  }
+  .owl-next{
+    position: absolute;
+    right: -10%;
+    top: 33%;
+    width: 30px;
+  }
+  .owl-carousel{
+    width: 85%;
+  }
+  .owl-item img{
+    width: 85%;
+  }
+  .react-multiple-carousel__arrow--right:disabled{
+    display: block !important;
+}.react-multiple-carousel__arrow--left:disabled{
+  display: block !important;
+}
+
+
+}
+
+@media screen and (min-width:1024px) and (max-width:1440px) {
+  .owl-prev{
+    position: absolute;
+    left: -10%;
+    top: 33%;
+    width: 30px; 
+  }
+  .owl-next{
+    position: absolute;
+    right: -10%;
+    top: 33%;
+    width: 30px;
+  }
+  .owl-carousel{
+    width: 85%;
+  }
+  .owl-item img{
+    width: 85%;
+  }
+  .react-multiple-carousel__arrow--right:disabled{
+    display: block !important;
+}.react-multiple-carousel__arrow--left:disabled{
+  display: block !important;
+}
+}
+@media screen and (min-width:1440px) and (max-width:2560px) {
+  .owl-prev{
+    position: absolute;
+    left: -10%;
+    top: 33%;
+    width: 30px; 
+  }
+  .owl-next{
+    position: absolute;
+    right: -10%;
+    top: 33%;
+    width: 30px;
+  }
+  .owl-carousel{
+    width: 85%;
+  }
+  .owl-item img{
+    width: 85%;
+  }
+  .react-multiple-carousel__arrow--right:disabled{
+    display: block !important;
+}.react-multiple-carousel__arrow--left:disabled{
+  display: block !important;
+}
+
+
+}
+
+@media (min-width: 2560px) {
+  .container {
+      max-width: 2560px;
+  }
+}

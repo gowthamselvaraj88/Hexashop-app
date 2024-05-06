@@ -1,0 +1,14 @@
+.react-multiple-carousel__arrow--right:disabled{
+    display: none !important;
+}.react-multiple-carousel__arrow--left:disabled{
+  display: none !important;
+}
+
+.owl-carousel .owl-nav.disabled{
+  display: none !important;
+}
+
+.owl-nav{
+  display: none !important;
+}
+
