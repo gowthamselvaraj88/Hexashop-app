@@ -4,25 +4,27 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-black dark:bg-gray-900">
-      <div className="contents">
-        <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl grid grid-cols-1 md:grid-cols-4 gap-8  py-10 lg:py-12 border-b border-dotted-amber-80">
-          <div className="justify-between placeholder:">
+      <div className="container mx-auto px-20">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8  py-10 lg:py-12 border-b border-dotted">
+          <div className="justify-between px-5">
             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
               <img
                 src="./images/white-logo.png"
-                className="mr-4 h-8 sm:h-10"
+                className="mr-4"
                 alt="HEXASHOP"
+                width={200}
+                height={200}
               />
             </h2>
-            <ul className="text-white font-small">
-              <li className="mb-2">
+            <ul className="text-white">
+              <li className="mb-2 text-xs">
                 16501 Collins Ave, Sunny Isles Beach, FL 33160, United States.
               </li>
               <li>
-                <span className="text-white">hexashop@company.com</span>
+                <span className="text-white text-xs">hexashop@company.com</span>
               </li>
               <li>
-                <span className="text-white">010-020-0340</span>
+                <span className="text-white text-xs">010-020-0340</span>
               </li>
             </ul>
           </div>
@@ -30,7 +32,7 @@ const Footer = () => {
             <div><h2 className="mb-6 text-white text-sm font-semibold uppercase dark:text-white">
               Company
             </h2></div>
-            <ul className="text-white font-medium">
+            <ul className="text-white text-sm font-medium">
               <li className="mb-2">
                 <Link href="#" className="text-white hover:underline">
                   About
@@ -57,7 +59,7 @@ const Footer = () => {
             <h2 className="mb-6 text-white text-sm font-semibold uppercase dark:text-white">
               Help center
             </h2>
-            <ul className="text-white font-medium">
+            <ul className="text-white text-sm font-medium">
               <li className="mb-2">
                 <Link href="#" className="text-white hover:underline">
                   Discord Server
@@ -84,7 +86,7 @@ const Footer = () => {
             <h2 className="flex mb-6 text-white text-sm font-semibold uppercase dark:text-white">
               Legal
             </h2>
-            <ul className="text-white font-medium">
+            <ul className="text-white text-sm font-medium">
               <li className="mb-2">
                 <Link href="#" className="text-white hover:underline">
                   Privacy Policy
@@ -105,7 +107,6 @@ const Footer = () => {
         </div>
         <div className="flex justify-center items-center ">
         <div className="py-6 flex flex-col items-center md:flex-col md:items-center ">
-        {/* py-6 flex flex-col-reverse justify-between items-center md:flex-row md:items-center */}
           <span className="text-sm text-white dark:text-gray-300">
           Copyrights © 2023{" "}
             <Link href="https://flowbite.com/" className="text-white">

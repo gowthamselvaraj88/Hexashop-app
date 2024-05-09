@@ -44,9 +44,9 @@ export default function product() {
     return (
         <section>
             <Header />
-            <div className='relative pt-[150px]'>
-                <img src="./images/products-page-heading.jpg"></img>
-                <div className='absolute text-white bottom-[40px] left-[70px] md:bottom-[110px] md:left-[220px] lg:bottom-[140px] lg:left-[340px] xl:bottom-[185px] xl:left-[440px] 2xl:bottom-[185px] 2xl:left-[440px]'>
+            <div className='flex items-center justify-center pt-[150px]'>
+            <div className='relative'><img src="./images/products-page-heading.jpg"></img></div>
+                <div className='absolute text-white'>
                     <h3 className='text-xl md:text-3xl lg:text-5xl xl:text-6xl font-bold text-center'>Check Our Products</h3>
                     <p className='italic mt-3 text-xs md:text-sm lg:text-xl'>Awesome & Creative HTML CSS layout by TemplateMo</p>
                 </div>
@@ -57,7 +57,7 @@ export default function product() {
                     <p className='italic text-sm lg:text-xl text-gray-500 font_size p-3'>Check out all of our products.</p>
                 </div>
             </div>
-            <div className='container mx-auto grid-cols-1 lg:px-22 md:px-12 gap-3'>
+            <div className='container mx-auto grid-cols-1 px-12 lg:px-22 gap-3'>
                 <OwlCarousel className="owl-theme " {...options}>
                     {mens.map((a) => (
                         <div className="relative">

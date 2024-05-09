@@ -10,10 +10,10 @@ import "@/app/globals.css";
 const About = () => {
   return (
     <section>
-      <div className='w-full h-full relative'>
-        <Header />
-        <img className='pt-[130px]' src="./images/products-page-heading.jpg"/>
-        <div className='absolute text-white bottom-[30px] left-[65px] md:bottom-[100px] md:left-[175px] lg:bottom-[150px] lg:left-[285px] xl:bottom-[200px] xl:left-[460px] text-center '>
+      <div><Header /></div>
+      <div className='w-full h-full flex items-center justify-center'>
+        <div className='relative'><img className='pt-[130px]' src="./images/about-us-page-heading.jpg"/></div>
+        <div className='absolute text-white pt-[110px] md:pt-0'>
           <h3 className='text-xl md:text-5xl xl:text-6xl font-bold text-center'>About Our Company</h3>
           <p className='italic text-xs md:text-sm lg:text-xl mt-3'>Awesome & Creative HTML CSS layout by TemplateMo</p>
         </div>
@@ -23,15 +23,15 @@ const About = () => {
           <div className='grid-cols-1'>
             <img src='./images/about-left-image.jpg' />
           </div>
-          <div className='grid-cols-1 ml-[35px] p-3 md:p-0'>
+          <div className='grid-cols-1 ml-0 md:ml-[35px] py-10 md:p-0'>
           <div className='bg-white m-auto p-auto
                            border-y border-dotted-amber-80'>
-            <div className='text-black bottom-[40px] left-[70px] md:bottom-[70px] md:left-[150px] lg:bottom-[140px] lg:left-[340px]'>
+            <div className='text-black items-center justify-center'>
                 <h3 className='text-xl md:text-2xl lg:text-4xl font-bold text-start lg:p-2'>About Us & Our Skills  </h3>
                 <p className='p-3 italic mt-3 text-[#a59f9f] text-xs md:text-sm lg:text-md'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod kon tempor incididunt ut labore.</p>
               </div>
               <div className='p-3  flex'>
-                <FaQuoteLeft size={30} className="inline-block mr-2" /><p className='text-xs italic'>Lorem ipsum sit amet, consectetur adipiscing elit, sed do eiuski mod </p>
+                <FaQuoteLeft size={40} className="inline-block mr-2" /><p className='text-xs italic'>Lorem ipsum sit amet, consectetur adipiscing elit, sed do eiuski mod </p>
               </div>
               <div className='p-3'>
                 <p className='italic text-[#a59f9f] text-xs md:text-sm lg:text-md'>
@@ -39,12 +39,12 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className=' p-5'>
+            <div className='sm:p-5 md:p-0 '>
               <ul className='flex'>
-                <li><FaFacebook size={25} className="inline-block mr-2  bg-white rounded-full" /></li>
-                <li><FaTwitter color={"white"} size={25} className="inline-block mr-2 bg-black rounded-full" /></li>
-                <li><FaLinkedin size={25} className="inline-block mr-2  bg-white rounded-full" /></li>
-                <li> <FaBehance color={"white"} size={25} className="inline-block mr-2 bg-black rounded-full" /></li>
+                <li><FaFacebook size={35} className="inline-block mr-2  bg-white rounded-full" /></li>
+                <li><FaTwitter color={"white"} size={35} className="inline-block mr-2 p-2 bg-black rounded-full" /></li>
+                <li><FaLinkedin size={35} className="inline-block mr-2 bg-white rounded-full" /></li>
+                <li> <FaBehance color={"white"} size={35} className="inline-block mr-2 p-2 bg-black rounded-full" /></li>
               </ul>
 
             </div>
@@ -52,10 +52,8 @@ const About = () => {
 
         </div>
       </div>
-      <div className='p-10 10 10 10 flex flex-col bg-white m-auto p-auto
-         section1 border-y border-dotted-amber-80'><AboutImage /></div>
-      <div className='p-10 10 10 10 flex flex-col bg-white m-auto p-auto
-         section1 border-y border-dotted-amber-80'><Card /></div>
+      <div className='border-y border-dotted border-gray-300'><AboutImage /></div>
+      <div className='border-y border-dotted border-gray-300'><Card /></div>
       <div className='container mx-auto p-10'><Address /></div>
 <Footer />
 </section>
@@ -63,4 +61,3 @@ const About = () => {
 }
 
 export default About
- 

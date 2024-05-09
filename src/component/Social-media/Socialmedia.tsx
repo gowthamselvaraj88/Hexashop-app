@@ -63,7 +63,7 @@ const Socialmedia = () => {
   ));
 
   return (
-    <section className="container mx-auto px-15">
+    <section className="container mx-auto px-10 md:px-15  lg:px-15 2xl:px-32">
         <div className="mb-5 lg:mb-8 px-5">
           <h2 className="text-2xl lg:text-5xl font-bold">Social Media</h2>
           <span className="text-sm lg:text-lg text-[#a59f9f]">
